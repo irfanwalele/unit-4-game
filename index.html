@@ -17,7 +17,112 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
-<body>
+<!-- This is the title on a jumbotron, it brings extra attention -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Crystals Collector</h1>
+    </div>
+</div>
+
+<div class="container">
+
+        <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="panel panel-primary my-panel">
     
-</body>
-</html>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+    
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p id="modalText">Testing 123 Modal..</p>
+                            </div>
+    
+                        </div>
+    
+                        <div class="panel-body">
+                            <div class="col-lg-6 col-md-6 col-sm-6  col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h1 class="panel-title">Here are the Rules!</h1>
+                                    </div>
+                                    <div class="panel-body">
+                                        <!-- this is an underorderd list -->
+                                        <ul>
+                                            <li>Remember to list the game rules here</li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div id=total class="panel-heading">
+                                        <h3 class="panel-title">Crystals</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                <div class="thumbnail">
+                                                    <img id="blue" src="assets/images/bluediamond.png" alt="bluediamond">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                <div class="thumbnail">
+                                                    <img id="green" src="assets/images/greendiamond" alt="greendiamond">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                <div class="thumbnail">
+                                                    <img id="red" src="assets/images/redjewel.jpg" alt="redjewel">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                <div class="thumbnail">
+                                                    <img id="yellow" src="assets/images/yellowdiamond.png" alt="yellowdiamond">
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-7">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Numbers</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Your Total:
+                                            <span id="totalNum"></span>
+                                        </h4>
+                                        <h4>Number To Match:
+                                            <span id="numToGuess"></span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-sm-6 col-xs-5">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Score</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Wins:
+                                            <span id="wins"></span>
+                                        </h4>
+                                        <h4>Losses:
+                                            <span id="losses"></span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/javascript/game.js"></script>
+    </body>
+    
+    </html>
