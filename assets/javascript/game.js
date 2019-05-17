@@ -42,14 +42,10 @@ var reset = function() {
 //alert win or loss
 //if else statement for winning or losing. 
 var winCheck = function() {
-    var audioElement = document.createElement("audio");  
-    var soundClip;
-
+    
     if (userTotal == randomNum) {
         $("#wins").html(wins++);        
-        soundClip =  "assets/audio/applause.mp3";
-        audioElement.setAttribute("src", soundClip);  
-        audioElement.play(); 
+        
 
         $("#modalText").html("Hooray! You won!");
         modal.style.display = "block";  
@@ -57,9 +53,7 @@ var winCheck = function() {
 
     } else if (userTotal > randomNum) {
         $("#losses").html(losses++);        
-        soundClip =  "assets/audio/sad_trombone.mp3";   
-        audioElement.setAttribute("src", soundClip);
-        audioElement.play();    
+        
 
         $("#modalText").html("You did not win! Try Again!"); 
         modal.style.display = "block"; 
